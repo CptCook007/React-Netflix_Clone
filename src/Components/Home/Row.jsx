@@ -17,7 +17,7 @@ function Row({ title, requestUrl }) {
       </div>
       <div className="flex relative items-center">
         <div
-          className="text-white overflow-x-scroll ms-16 overflow-y-hidden scroll-smooth scrollbar-hide  flex p-10"
+          className="text-white overflow-x-scroll ms-16 overflow-y-hidden scroll-smooth scrollbar-hide ps-0  flex p-10"
           id={"slider"}
         >
           {movies.map((movie) => (

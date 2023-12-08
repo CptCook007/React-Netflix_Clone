@@ -1,13 +1,49 @@
 const key = "e362f62148a6d28e6eccbc434bae5241";
-const requests = {
-  requestOriginals: `https://api.themoviedb.org/3/discover/movie?api_key=${key}&with_genres=12`,
-  requestPopular: `https://api.themoviedb.org/3/movie/popular?api_key=${key}&language=en-US&page=1`,
-  requestTopRated: `https://api.themoviedb.org/3/movie/top_rated?api_key=${key}&language=en-US&page=1`,
-  requestFantasy: `https://api.themoviedb.org/3/discover/movie?api_key=${key}&with_genres=14`,
-  requestScienceFiction: `https://api.themoviedb.org/3/discover/movie?api_key=${key}&with_genres=878`,
-  requestTrending: `https://api.themoviedb.org/3/movie/popular?api_key=${key}&language=en-US&page=2`,
-  requestHorror: `https://api.themoviedb.org/3/search/movie?api_key=${key}&language=en-US&query=horror&page=1&include_adult=false`,
-  requestUpcoming: `https://api.themoviedb.org/3/movie/upcoming?api_key=${key}&language=en-US&page=1`,
-  requestUMystery: `https://api.themoviedb.org/3/discover/movie?api_key=${key}&with_genres=9648`,
-};
+const requests = [
+  {
+    id: 1,
+    title: "Originals",
+    requestURI: `https://api.themoviedb.org/3/discover/movie?api_key=${key}&with_genres=12`,
+  },
+  {
+    id: 8,
+    title: "Upcoming",
+    requestURI: `https://api.themoviedb.org/3/movie/upcoming?api_key=${key}&language=en-US&page=1`,
+  },
+  {
+    id: 2,
+    title: "Popular",
+    requestURI: `https://api.themoviedb.org/3/movie/popular?api_key=${key}&language=en-US&page=1`,
+  },
+  {
+    id: 3,
+    title: "Top Rated",
+    requestURI: `https://api.themoviedb.org/3/movie/top_rated?api_key=${key}&language=en-US&page=1`,
+  },
+  {
+    id: 6,
+    title: "Trending",
+    requestURI: `https://api.themoviedb.org/3/movie/popular?api_key=${key}&language=en-US&page=2`,
+  },
+  {
+    id: 4,
+    title: "Fantasy",
+    requestURI: `https://api.themoviedb.org/3/discover/movie?api_key=${key}&with_genres=14`,
+  },
+  {
+    id: 5,
+    title: "Science Fiction",
+    requestURI: `https://api.themoviedb.org/3/discover/movie?api_key=${key}&with_genres=878`,
+  },
+  {
+    id: 7,
+    title: "Family",
+    requestURI: `https://api.themoviedb.org/3/discover/movie?api_key=${key}&with_genres=10751`,
+  },
+  {
+    id: 9,
+    title: "Mystery",
+    requestURI: `https://api.themoviedb.org/3/discover/movie?api_key=${key}&with_genres=9648`,
+  },
+];
 export default requests;

@@ -6,7 +6,6 @@ import ReactPlayer from "react-player/youtube";
 import movieTrailer from "movie-trailer";
 export function HomeBanner({ movie }) {
   const [trailerVideoUrl, setTrailerVideoUrl] = useState("");
-  // const movieTrailer = require("movie-trailer");
   console.log(trailerVideoUrl);
   console.log(movie);
   const bannerImage = BANNER_BASE_IMAGE_URL + movie?.backdrop_path;
@@ -32,7 +31,7 @@ export function HomeBanner({ movie }) {
           <div
             className={
               trailerVideoUrl
-                ? "bg-gradient-to-b w-full h-[840px]  absolute  from-black/90 z-10"
+                ? "bg-gradient-to-br w-full h-[840px]  absolute  from-black/90 z-10"
                 : "absolute w-full h-[800px] z-10 bg-gradient-to-tr  from-black"
             }
           ></div>
